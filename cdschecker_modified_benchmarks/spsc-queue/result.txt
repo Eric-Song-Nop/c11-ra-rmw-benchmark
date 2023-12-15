@@ -1,0 +1,4500 @@
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000000CCDF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000000CCDE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000000CCDF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000000CCDF20   0x7fcbc0000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000CCDF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000CCDE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FCBC0000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000000CCDF20   0                       ([ 0, 0], [ 0, 4])
+
+0000000000CCDE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000000CCDF20   0x7fcbc0000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000CCDF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000CCDE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FCBC0000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001F58F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001F58E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001F58F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001F58F20   0x7fa080000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001F58F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001F58E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FA080000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001F58F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001F58E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001F58F20   0x7fa080000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001F58F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001F58E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FA080000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000008EAF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000008EAE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000008EAF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000008EAF20   0x7f083c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000008EAF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000008EAE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F083C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000008EAF20   0                       ([ 0, 0], [ 0, 4])
+
+00000000008EAE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000008EAF20   0x7f083c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000008EAF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000008EAE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F083C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.01 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  000000000118BF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+000000000118BE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+000000000118BF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  000000000118BF20   0x7f2a94000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000118BF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000118BE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F2A94000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  000000000118BF20   0                       ([ 0, 0], [ 0, 4])
+
+000000000118BE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  000000000118BF20   0x7f2a94000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000118BF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000118BE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F2A94000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001640F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001640E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001640F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001640F20   0x7f730c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001640F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001640E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F730C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001640F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001640E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001640F20   0x7f730c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001640F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001640E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F730C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001A5FF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001A5FE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001A5FF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001A5FF20   0x7f39e8000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001A5FF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001A5FE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F39E8000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001A5FF20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001A5FE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001A5FF20   0x7f39e8000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001A5FF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001A5FE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F39E8000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001882F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001882E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001882F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001882F20   0x7f6008000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001882F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001882E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F6008000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001882F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001882E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001882F20   0x7f6008000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001882F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001882E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F6008000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001B9DF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001B9DE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001B9DF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001B9DF20   0x7f49d0000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001B9DF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001B9DE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F49D0000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001B9DF20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001B9DE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001B9DF20   0x7f49d0000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001B9DF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001B9DE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F49D0000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.01 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001231F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001231E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001231F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001231F20   0x7f7830000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001231F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001231E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F7830000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001231F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001231E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001231F20   0x7f7830000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001231F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001231E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F7830000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000019FFF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000019FFE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000019FFF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000019FFF20   0x7f5c40000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000019FFF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000019FFE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F5C40000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000019FFF20   0                       ([ 0, 0], [ 0, 4])
+
+00000000019FFE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000019FFF20   0x7f5c40000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000019FFF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000019FFE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F5C40000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001D7AF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001D7AE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001D7AF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001D7AF20   0x7f7450000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001D7AF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001D7AE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F7450000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001D7AF20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001D7AE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001D7AF20   0x7f7450000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001D7AF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001D7AE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F7450000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.01
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000002167F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000002167E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000002167F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000002167F20   0x7f125c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002167F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002167E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F125C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000002167F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000002167E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000002167F20   0x7f125c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002167F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002167E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F125C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001BA5F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001BA5E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001BA5F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001BA5F20   0x7f9f5c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001BA5F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001BA5E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F9F5C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001BA5F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001BA5E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001BA5F20   0x7f9f5c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001BA5F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001BA5E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F9F5C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.01
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  000000000118BF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+000000000118BE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+000000000118BF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  000000000118BF20   0x7fa940000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000118BF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000118BE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FA940000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  000000000118BF20   0                       ([ 0, 0], [ 0, 4])
+
+000000000118BE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  000000000118BF20   0x7fa940000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000118BF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000118BE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FA940000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001D35F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001D35E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001D35F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001D35F20   0x7f98d4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001D35F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001D35E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F98D4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001D35F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001D35E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001D35F20   0x7f98d4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001D35F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001D35E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F98D4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.01
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001148F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001148E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001148F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001148F20   0x7fa360000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001148F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001148E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FA360000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001148F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001148E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001148F20   0x7fa360000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001148F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001148E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FA360000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.01
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000002417F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000002417E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000002417F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000002417F20   0x7f234c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002417F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002417E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F234C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000002417F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000002417E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000002417F20   0x7f234c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002417F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002417E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F234C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000015F7F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000015F7E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000015F7F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000015F7F20   0x7f5a88000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000015F7F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000015F7E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F5A88000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000015F7F20   0                       ([ 0, 0], [ 0, 4])
+
+00000000015F7E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000015F7F20   0x7f5a88000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000015F7F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000015F7E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F5A88000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001192F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001192E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001192F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001192F20   0x7f1fd4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001192F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001192E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F1FD4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001192F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001192E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001192F20   0x7f1fd4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001192F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001192E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F1FD4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000000DD2F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000000DD2E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000000DD2F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000000DD2F20   0x7f7d9c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000DD2F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000DD2E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F7D9C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000000DD2F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000000DD2E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000000DD2F20   0x7f7d9c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000DD2F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000DD2E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F7D9C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000016CDF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000016CDE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000016CDF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000016CDF20   0x7f1290000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000016CDF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000016CDE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F1290000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000016CDF20   0                       ([ 0, 0], [ 0, 4])
+
+00000000016CDE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000016CDF20   0x7f1290000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000016CDF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000016CDE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F1290000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.01
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001F6BF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001F6BE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001F6BF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001F6BF20   0x7f76d0000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001F6BF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001F6BE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F76D0000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001F6BF20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001F6BE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001F6BF20   0x7f76d0000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001F6BF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001F6BE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F76D0000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.01
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001D60F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001D60E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001D60F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001D60F20   0x7f05fc000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001D60F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001D60E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F05FC000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001D60F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001D60E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001D60F20   0x7f05fc000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001D60F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001D60E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F05FC000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000002259F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000002259E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000002259F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000002259F20   0x7f3a88000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002259F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002259E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F3A88000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000002259F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000002259E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000002259F20   0x7f3a88000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002259F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002259E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F3A88000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001D9DF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001D9DE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001D9DF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001D9DF20   0x7fe970000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001D9DF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001D9DE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FE970000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001D9DF20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001D9DE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001D9DF20   0x7fe970000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001D9DF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001D9DE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FE970000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001B66F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001B66E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001B66F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001B66F20   0x7f9c30000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001B66F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001B66E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F9C30000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001B66F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001B66E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001B66F20   0x7f9c30000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001B66F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001B66E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F9C30000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001877F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001877E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001877F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001877F20   0x7fcc48000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001877F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001877E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FCC48000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001877F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001877E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001877F20   0x7fcc48000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001877F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001877E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FCC48000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001B6EF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001B6EE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001B6EF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001B6EF20   0x7f4488000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001B6EF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001B6EE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F4488000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001B6EF20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001B6EE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001B6EF20   0x7f4488000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001B6EF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001B6EE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F4488000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000000BA0F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000000BA0E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000000BA0F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000000BA0F20   0x7f9a10000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000BA0F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000BA0E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F9A10000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000000BA0F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000000BA0E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000000BA0F20   0x7f9a10000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000BA0F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000BA0E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F9A10000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000002347F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000002347E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000002347F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000002347F20   0x7fef40000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002347F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002347E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FEF40000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000002347F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000002347E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000002347F20   0x7fef40000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002347F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002347E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FEF40000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000020E4F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000020E4E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000020E4F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000020E4F20   0x7fd9b8000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000020E4F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000020E4E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FD9B8000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000020E4F20   0                       ([ 0, 0], [ 0, 4])
+
+00000000020E4E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000020E4F20   0x7fd9b8000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000020E4F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000020E4E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FD9B8000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  000000000191BF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+000000000191BE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+000000000191BF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  000000000191BF20   0x7f2694000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000191BF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000191BE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F2694000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  000000000191BF20   0                       ([ 0, 0], [ 0, 4])
+
+000000000191BE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  000000000191BF20   0x7f2694000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000191BF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000191BE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F2694000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.01
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001413F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001413E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001413F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001413F20   0x7f3520000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001413F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001413E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F3520000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001413F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001413E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001413F20   0x7f3520000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001413F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001413E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F3520000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.01 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  000000000203FF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+000000000203FE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+000000000203FF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  000000000203FF20   0x7f1a2c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000203FF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000203FE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F1A2C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  000000000203FF20   0                       ([ 0, 0], [ 0, 4])
+
+000000000203FE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  000000000203FF20   0x7f1a2c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000203FF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000203FE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F1A2C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000000FA0F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000000FA0E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000000FA0F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000000FA0F20   0x7f939c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000FA0F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000FA0E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F939C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000000FA0F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000000FA0E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000000FA0F20   0x7f939c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000FA0F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000FA0E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F939C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001238F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001238E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001238F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001238F20   0x7f1c0c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001238F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001238E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F1C0C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001238F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001238E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001238F20   0x7f1c0c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001238F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001238E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F1C0C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000008A5F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000008A5E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000008A5F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000008A5F20   0x7f223c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000008A5F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000008A5E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F223C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000008A5F20   0                       ([ 0, 0], [ 0, 4])
+
+00000000008A5E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000008A5F20   0x7f223c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000008A5F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000008A5E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F223C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001D18F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001D18E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001D18F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001D18F20   0x7fb718000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001D18F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001D18E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FB718000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001D18F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001D18E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001D18F20   0x7fb718000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001D18F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001D18E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FB718000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000002288F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000002288E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000002288F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000002288F20   0x7f8430000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002288F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002288E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F8430000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000002288F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000002288E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000002288F20   0x7f8430000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002288F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002288E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F8430000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.01 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000020EBF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000020EBE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000020EBF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000020EBF20   0x7f10c4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000020EBF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000020EBE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F10C4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000020EBF20   0                       ([ 0, 0], [ 0, 4])
+
+00000000020EBE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000020EBF20   0x7f10c4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000020EBF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000020EBE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F10C4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000018F2F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000018F2E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000018F2F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000018F2F20   0x7fdfac000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000018F2F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000018F2E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FDFAC000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000018F2F20   0                       ([ 0, 0], [ 0, 4])
+
+00000000018F2E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000018F2F20   0x7fdfac000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000018F2F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000018F2E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FDFAC000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000002328F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000002328E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000002328F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000002328F20   0x7fea68000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002328F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002328E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FEA68000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000002328F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000002328E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000002328F20   0x7fea68000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002328F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002328E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FEA68000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  000000000123FF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+000000000123FE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+000000000123FF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  000000000123FF20   0x7f5da8000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000123FF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000123FE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F5DA8000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  000000000123FF20   0                       ([ 0, 0], [ 0, 4])
+
+000000000123FE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  000000000123FF20   0x7f5da8000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000123FF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000123FE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F5DA8000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001204F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001204E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001204F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001204F20   0x7fcdc0000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001204F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001204E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FCDC0000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001204F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001204E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001204F20   0x7fcdc0000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001204F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001204E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FCDC0000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001EB2F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001EB2E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001EB2F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001EB2F20   0x7fa1ec000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001EB2F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001EB2E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FA1EC000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001EB2F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001EB2E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001EB2F20   0x7fa1ec000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001EB2F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001EB2E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FA1EC000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  000000000171EF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+000000000171EE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+000000000171EF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  000000000171EF20   0x7fe800000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000171EF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000171EE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FE800000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  000000000171EF20   0                       ([ 0, 0], [ 0, 4])
+
+000000000171EE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  000000000171EF20   0x7fe800000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000171EF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000171EE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FE800000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000000B0FF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000000B0FE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000000B0FF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000000B0FF20   0x7fb418000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000B0FF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000B0FE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FB418000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000000B0FF20   0                       ([ 0, 0], [ 0, 4])
+
+0000000000B0FE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000000B0FF20   0x7fb418000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000B0FF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000B0FE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FB418000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.01 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001CB6F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001CB6E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001CB6F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001CB6F20   0x7faf4c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001CB6F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001CB6E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FAF4C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001CB6F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001CB6E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001CB6F20   0x7faf4c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001CB6F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001CB6E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FAF4C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  000000000212AF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+000000000212AE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+000000000212AF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  000000000212AF20   0x7fd83c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000212AF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000212AE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FD83C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  000000000212AF20   0                       ([ 0, 0], [ 0, 4])
+
+000000000212AE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  000000000212AF20   0x7fd83c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000212AF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000212AE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FD83C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000022F7F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000022F7E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000022F7F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000022F7F20   0x7efc54000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000022F7F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000022F7E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007EFC54000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000022F7F20   0                       ([ 0, 0], [ 0, 4])
+
+00000000022F7E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000022F7F20   0x7efc54000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000022F7F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000022F7E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007EFC54000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000002446F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000002446E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000002446F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000002446F20   0x7f2f78000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002446F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002446E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F2F78000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000002446F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000002446E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000002446F20   0x7f2f78000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002446F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002446E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F2F78000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.01
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000015AEF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000015AEE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000015AEF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000015AEF20   0x7fcf34000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000015AEF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000015AEE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FCF34000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000015AEF20   0                       ([ 0, 0], [ 0, 4])
+
+00000000015AEE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000015AEF20   0x7fcf34000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000015AEF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000015AEE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FCF34000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000017A0F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000017A0E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000017A0F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000017A0F20   0x7f0278000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000017A0F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000017A0E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F0278000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000017A0F20   0                       ([ 0, 0], [ 0, 4])
+
+00000000017A0E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000017A0F20   0x7f0278000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000017A0F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000017A0E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F0278000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000000CDFF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000000CDFE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000000CDFF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000000CDFF20   0x7f70e4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000CDFF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000CDFE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F70E4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000000CDFF20   0                       ([ 0, 0], [ 0, 4])
+
+0000000000CDFE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000000CDFF20   0x7f70e4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000CDFF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000CDFE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F70E4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000008CDF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000008CDE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000008CDF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000008CDF20   0x7f7c18000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000008CDF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000008CDE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F7C18000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000008CDF20   0                       ([ 0, 0], [ 0, 4])
+
+00000000008CDE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000008CDF20   0x7f7c18000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000008CDF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000008CDE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F7C18000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001CFDF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001CFDE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001CFDF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001CFDF20   0x7f5cc0000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001CFDF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001CFDE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F5CC0000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001CFDF20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001CFDE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001CFDF20   0x7f5cc0000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001CFDF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001CFDE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F5CC0000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000002156F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000002156E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000002156F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000002156F20   0x7f1354000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002156F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002156E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F1354000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000002156F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000002156E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000002156F20   0x7f1354000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002156F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002156E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F1354000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000002185F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000002185E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000002185F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000002185F20   0x7f1c90000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002185F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002185E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F1C90000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000002185F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000002185E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000002185F20   0x7f1c90000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002185F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002185E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F1C90000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.01 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000002106F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000002106E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000002106F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000002106F20   0x7f40d8000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002106F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002106E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F40D8000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000002106F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000002106E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000002106F20   0x7f40d8000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002106F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002106E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F40D8000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.01
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000000696F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000000696E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000000696F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000000696F20   0x7f2f84000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000696F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000696E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F2F84000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000000696F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000000696E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000000696F20   0x7f2f84000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000696F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000696E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F2F84000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001FC4F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001FC4E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001FC4F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001FC4F20   0x7f11fc000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001FC4F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001FC4E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F11FC000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001FC4F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001FC4E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001FC4F20   0x7f11fc000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001FC4F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001FC4E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F11FC000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001148F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001148E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001148F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001148F20   0x7faf38000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001148F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001148E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FAF38000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001148F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001148E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001148F20   0x7faf38000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001148F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001148E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FAF38000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  000000000151EF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+000000000151EE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+000000000151EF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  000000000151EF20   0x7f80c4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000151EF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000151EE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F80C4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  000000000151EF20   0                       ([ 0, 0], [ 0, 4])
+
+000000000151EE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  000000000151EF20   0x7f80c4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000151EF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000151EE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F80C4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  000000000224DF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+000000000224DE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+000000000224DF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  000000000224DF20   0x7f01c4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000224DF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000224DE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F01C4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  000000000224DF20   0                       ([ 0, 0], [ 0, 4])
+
+000000000224DE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  000000000224DF20   0x7f01c4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000224DF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000224DE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F01C4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001498F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001498E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001498F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001498F20   0x7f9b50000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001498F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001498E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F9B50000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001498F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001498E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001498F20   0x7f9b50000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001498F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001498E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F9B50000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000000C31F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000000C31E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000000C31F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000000C31F20   0x7f7220000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000C31F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000C31E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F7220000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000000C31F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000000C31E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000000C31F20   0x7f7220000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000C31F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000C31E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F7220000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.01
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000025B3F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000025B3E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000025B3F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000025B3F20   0x7fa950000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000025B3F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000025B3E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FA950000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000025B3F20   0                       ([ 0, 0], [ 0, 4])
+
+00000000025B3E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000025B3F20   0x7fa950000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000025B3F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000025B3E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FA950000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000000D69F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000000D69E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000000D69F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000000D69F20   0x7fd3c4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000D69F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000D69E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FD3C4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000000D69F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000000D69E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000000D69F20   0x7fd3c4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000D69F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000D69E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FD3C4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000000B69F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000000B69E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000000B69F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000000B69F20   0x7f579c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000B69F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000B69E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F579C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000000B69F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000000B69E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000000B69F20   0x7f579c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000B69F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000B69E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F579C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000002606F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000002606E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000002606F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000002606F20   0x7fa408000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002606F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002606E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FA408000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000002606F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000002606E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000002606F20   0x7fa408000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002606F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002606E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FA408000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.01
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  000000000217DF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+000000000217DE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+000000000217DF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  000000000217DF20   0x7f96b8000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000217DF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000217DE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F96B8000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  000000000217DF20   0                       ([ 0, 0], [ 0, 4])
+
+000000000217DE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  000000000217DF20   0x7f96b8000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000217DF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000217DE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F96B8000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000018E6F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000018E6E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000018E6F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000018E6F20   0x7f2650000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000018E6F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000018E6E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F2650000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000018E6F20   0                       ([ 0, 0], [ 0, 4])
+
+00000000018E6E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000018E6F20   0x7f2650000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000018E6F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000018E6E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F2650000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000000ADDF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000000ADDE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000000ADDF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000000ADDF20   0x7efcac000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000ADDF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000ADDE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007EFCAC000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000000ADDF20   0                       ([ 0, 0], [ 0, 4])
+
+0000000000ADDE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000000ADDF20   0x7efcac000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000ADDF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000ADDE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007EFCAC000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.01 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000010FDF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000010FDE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000010FDF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000010FDF20   0x7f3e68000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000010FDF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000010FDE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F3E68000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000010FDF20   0                       ([ 0, 0], [ 0, 4])
+
+00000000010FDE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000010FDF20   0x7f3e68000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000010FDF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000010FDE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F3E68000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000018D4F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000018D4E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000018D4F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000018D4F20   0x7fd9d0000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000018D4F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000018D4E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FD9D0000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000018D4F20   0                       ([ 0, 0], [ 0, 4])
+
+00000000018D4E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000018D4F20   0x7fd9d0000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000018D4F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000018D4E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FD9D0000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000000799F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000000799E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000000799F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000000799F20   0x7f8238000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000799F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000799E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F8238000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000000799F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000000799E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000000799F20   0x7f8238000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000799F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000799E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F8238000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000025AAF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000025AAE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000025AAF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000025AAF20   0x7f39d4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000025AAF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000025AAE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F39D4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000025AAF20   0                       ([ 0, 0], [ 0, 4])
+
+00000000025AAE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000025AAF20   0x7f39d4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000025AAF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000025AAE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F39D4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.01 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000017B6F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000017B6E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000017B6F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000017B6F20   0x7f0ae4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000017B6F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000017B6E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F0AE4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000017B6F20   0                       ([ 0, 0], [ 0, 4])
+
+00000000017B6E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000017B6F20   0x7f0ae4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000017B6F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000017B6E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F0AE4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000008FBF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000008FBE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000008FBF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000008FBF20   0x7f08a8000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000008FBF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000008FBE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F08A8000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000008FBF20   0                       ([ 0, 0], [ 0, 4])
+
+00000000008FBE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000008FBF20   0x7f08a8000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000008FBF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000008FBE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F08A8000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.01 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000025DCF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000025DCE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000025DCF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000025DCF20   0x7fb658000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000025DCF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000025DCE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FB658000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000025DCF20   0                       ([ 0, 0], [ 0, 4])
+
+00000000025DCE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000025DCF20   0x7fb658000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000025DCF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000025DCE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FB658000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001FA0F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001FA0E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001FA0F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001FA0F20   0x7fb030000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001FA0F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001FA0E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FB030000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001FA0F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001FA0E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001FA0F20   0x7fb030000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001FA0F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001FA0E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FB030000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  000000000235BF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+000000000235BE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+000000000235BF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  000000000235BF20   0x7f5ec4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000235BF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000235BE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F5EC4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  000000000235BF20   0                       ([ 0, 0], [ 0, 4])
+
+000000000235BE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  000000000235BF20   0x7f5ec4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000235BF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000235BE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F5EC4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000002125F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000002125E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000002125F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000002125F20   0x7fad20000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002125F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002125E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FAD20000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000002125F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000002125E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000002125F20   0x7fad20000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002125F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002125E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FAD20000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000002320F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000002320E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000002320F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000002320F20   0x7fca90000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002320F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002320E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FCA90000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000002320F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000002320E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000002320F20   0x7fca90000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000002320F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000002320E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FCA90000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000014BFF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000014BFE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000014BFF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000014BFF20   0x7fdeb4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000014BFF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000014BFE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FDEB4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000014BFF20   0                       ([ 0, 0], [ 0, 4])
+
+00000000014BFE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000014BFF20   0x7fdeb4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000014BFF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000014BFE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FDEB4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000019A5F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000019A5E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000019A5F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000019A5F20   0x7fbb04000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000019A5F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000019A5E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FBB04000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000019A5F20   0                       ([ 0, 0], [ 0, 4])
+
+00000000019A5E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000019A5F20   0x7fbb04000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000019A5F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000019A5E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FBB04000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  000000000247AF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+000000000247AE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+000000000247AF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  000000000247AF20   0x7f6120000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000247AF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000247AE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F6120000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  000000000247AF20   0                       ([ 0, 0], [ 0, 4])
+
+000000000247AE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  000000000247AF20   0x7f6120000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000247AF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000247AE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F6120000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000011BCF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000011BCE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000011BCF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000011BCF20   0x7f22b4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000011BCF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000011BCE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F22B4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000011BCF20   0                       ([ 0, 0], [ 0, 4])
+
+00000000011BCE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000011BCF20   0x7f22b4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000011BCF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000011BCE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F22B4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001657F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001657E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001657F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001657F20   0x7f126c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001657F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001657E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F126C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001657F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001657E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001657F20   0x7f126c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001657F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001657E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F126C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000024FBF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000024FBE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000024FBF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000024FBF20   0x7fe164000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000024FBF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000024FBE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FE164000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000024FBF20   0                       ([ 0, 0], [ 0, 4])
+
+00000000024FBE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000024FBF20   0x7fe164000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000024FBF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000024FBE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FE164000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.01
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000000A0CF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000000A0CE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000000A0CF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000000A0CF20   0x7f7718000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000A0CF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000A0CE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F7718000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000000A0CF20   0                       ([ 0, 0], [ 0, 4])
+
+0000000000A0CE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000000A0CF20   0x7f7718000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000A0CF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000A0CE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F7718000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  000000000199BF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+000000000199BE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+000000000199BF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  000000000199BF20   0x7fa470000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000199BF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000199BE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FA470000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  000000000199BF20   0                       ([ 0, 0], [ 0, 4])
+
+000000000199BE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  000000000199BF20   0x7fa470000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000199BF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000199BE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007FA470000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000000947F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000000947E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000000947F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000000947F20   0x7f2450000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000947F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000947E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F2450000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000000947F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000000947E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000000947F20   0x7f2450000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000947F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000947E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F2450000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.01
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000000ACFF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000000ACFE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000000ACFF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000000ACFF20   0x7f7ef0000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000ACFF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000ACFE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F7EF0000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000000ACFF20   0                       ([ 0, 0], [ 0, 4])
+
+0000000000ACFE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000000ACFF20   0x7f7ef0000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000000ACFF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000000ACFE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F7EF0000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.01 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001ED1F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001ED1E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001ED1F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001ED1F20   0x7f98f0000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001ED1F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001ED1E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F98F0000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001ED1F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001ED1E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001ED1F20   0x7f98f0000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001ED1F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001ED1E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F98F0000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001CA6F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001CA6E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001CA6F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001CA6F20   0x7f14e4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001CA6F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001CA6E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F14E4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001CA6F20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001CA6E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001CA6F20   0x7f14e4000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001CA6F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001CA6E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F14E4000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000006F3F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000006F3E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000006F3F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000006F3F20   0x7f89ac000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000006F3F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000006F3E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F89AC000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000006F3F20   0                       ([ 0, 0], [ 0, 4])
+
+00000000006F3E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000006F3F20   0x7f89ac000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000006F3F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000006F3E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F89AC000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000015E3F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000015E3E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000015E3F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000015E3F20   0x7f92d8000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000015E3F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000015E3E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F92D8000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000015E3F20   0                       ([ 0, 0], [ 0, 4])
+
+00000000015E3E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000015E3F20   0x7f92d8000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000015E3F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000015E3E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F92D8000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  0000000001D9AF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+0000000001D9AE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+0000000001D9AF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  0000000001D9AF20   0x7f9468000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001D9AF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001D9AE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F9468000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  0000000001D9AF20   0                       ([ 0, 0], [ 0, 4])
+
+0000000001D9AE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  0000000001D9AF20   0x7f9468000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+0000000001D9AF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+0000000001D9AE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F9468000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+after installIn main thread
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  000000000112EF20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+000000000112EE80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+000000000112EF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  000000000112EF20   0x7f823c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000112EF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000112EE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F823C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  000000000112EF20   0                       ([ 0, 0], [ 0, 4])
+
+000000000112EE80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  000000000112EF20   0x7f823c000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+000000000112EF20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+000000000112EE80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F823C000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+******* Model-checking complete: *******
+time: 0.00 0.00
