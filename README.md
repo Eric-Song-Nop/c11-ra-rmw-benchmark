@@ -6,3 +6,16 @@ export LD_LIBRARY_PATH=$HOME/c11tester-ra-rmw/ && export C11TESTER="-v3 -x1" && 
 make clean && make
 ./test_rub_all.sh
 ```
+
+## Benchmark for Phoenix
+
+First you need to get all 5 required assets from the following [Github Repository](https://github.com/kozyraki/phoenix).
+
+Then compile and run tests:
+```bash
+cd phoenix-2.0
+make
+# Take histogram as an example
+cd tests/histogram/
+./histogram-pthread $PATH_TO_HISTOGRAM_DATA_FOLDER/small.bpm
+```
