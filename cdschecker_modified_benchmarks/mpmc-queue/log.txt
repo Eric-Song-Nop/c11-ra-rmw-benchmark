@@ -1,0 +1,584 @@
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+60   3    atomic read     acquire  00007FFE492909A0   0xdeadbeef          ?   ([ 0, 0], [16,16], [58,40], [54,54])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [ 0, 0], [50, 0])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [28,28], [34,34])
+
+00007FFE492909A8  ([ 0, 0], [16,16])
+
+
+ Printing XHB RF set thread wise
+40   2    atomic rmw      acquire  00007FFE492909A0   0x3               (10003)  34  ([ 0, 0], [16,16], [38,36], [34,34])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [38,28], [34,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0])
+
+00007FFE492909A8  ([ 0, 0], [16,16])
+
+
+ Printing ARM RF set thread wise
+40   2    atomic rmw      acquire  00007FFE492909A0   0x3               (10003)  34  ([ 0, 0], [16,16], [38,36], [34,34])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [38,28], [34,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0])
+
+00007FFE492909A8  ([ 0, 0], [16,16])
+
+34   3    atomic rmw      acq_rel  00007FFE492909A0   0x2               (3)  28  ([ 0, 0], [16,16], [28,28], [30, 0])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [28,28], [30, 0])
+
+00007FFE492909A4  ([ 0, 0], [14, 6])
+
+00007FFE492909A8  ([ 0, 0], [16,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+Race detected at location: 
+/home/vagrant/c11tester-ra-rmw/libmodel.so(_Z15raceCheckRead32iPKv+0x69f)[0x7f6697a3d17f]
+./mpmc-queue[0x4013df]
+./mpmc-queue[0x401516]
+./mpmc-queue[0x404998]
+./mpmc-queue[0x4048c2]
+./mpmc-queue[0x404882]
+./mpmc-queue[0x404835]
+./mpmc-queue[0x4045b9]
+/usr/lib/x86_64-linux-gnu/libstdc++.so.6(+0xbd6df)[0x7f669774a6df]
+/home/vagrant/c11tester-ra-rmw/libmodel.so(_Z14thread_startupv+0x2f)[0x7f6697a2f53f]
+/home/vagrant/c11tester-ra-rmw/libmodel.so(_Z13helper_threadPv+0xeb)[0x7f6697a2f63b]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x76db)[0x7f6696ebf6db]
+/lib/x86_64-linux-gnu/libc.so.6(clone+0x3f)[0x7f6696be861f]
+
+Data race detected @ address 00007FFE49290994:
+    Access 1: write in thread  2 @ clock  32
+    Access 2:  read in thread  3 @ clock  68
+
+Did not allow action to read from :
+72   3    atomic rmw      release  00007FFE492909A4   0                 (1)  6   ([ 0, 0], [16,16], [78,40], [68,66])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [78,36], [68,54])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [66,66])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0], [50, 0])
+
+
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+94   2    atomic read     acquire  00007FFE492909A0   0xdeadbeef          ?   ([ 0, 0], [16,16], [92,92], [84,84])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [90,36], [54,54])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [34,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0], [50, 0])
+
+
+ Printing XHB RF set thread wise
+76   3    atomic rmw      acquire  00007FFE492909A0   0x20003           (30003)  66  ([ 0, 0], [16,16], [78,40], [74,72])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [74,66])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [78,36], [68,54])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0], [50, 0])
+
+
+ Printing ARM RF set thread wise
+40   2    atomic rmw      acquire  00007FFE492909A0   0x3               (10003)  34  ([ 0, 0], [16,16], [38,36], [34,34])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [38,28], [34,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0])
+
+00007FFE492909A8  ([ 0, 0], [16,16])
+
+76   3    atomic rmw      acquire  00007FFE492909A0   0x20003           (30003)  66  ([ 0, 0], [16,16], [78,40], [74,72])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [74,66])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [78,36], [68,54])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0], [50, 0])
+
+66   3    atomic rmw      acquire  00007FFE492909A0   0x10003           (20003)  40  ([ 0, 0], [16,16], [78,40], [60,54])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [60,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0], [50, 0])
+
+00007FFE492909A8  ([ 0, 0], [16,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+Number of complete, bug-free executions: 1
+Number of buggy executions: 0
+Total executions: 1
+atomic store  count: 3
+atomic load   count: 20
+atomic rmw    count: 12
+atomic fence  count: 0
+atomic lock   count: 0
+atomic trylock count: 0
+atomic unlock count: 0
+atomic notify count: 0
+atomic wait   count: 0
+atomic timedwait count: 0
+store 8  count: 0
+store 16 count: 0
+store 32 count: 11
+store 64 count: 46
+load  8  count: 0
+load  16 count: 0
+load  32 count: 42
+load  64 count: 14
+total iter count: 0, last_hb_write_null count: 0
+opt_prop_overhead: 0.00s
+mo_graph overhead: 0.00s
+ds overhead: 0.00s
+process_rmw orig: 0.00s
+process_rmw opt: 0.00s
+r_mod_order_time_orig positive: 0.00s
+r_mod_order_time_orig negative: 0.00s
+r_mod_order_time_orig total: 0.00s
+r_mod_order_time_opt positive: 0.00s
+r_mod_order_time_opt negative: 0.00s
+r_mod_order_time_opt total: 0.00s
+r_mod_order_time_orig_opt positive: 0.00s
+r_mod_order_time_orig_opt negative: 0.00s
+r_mod_order_time_orig_opt total: 0.00s
+w_mod_order_time_orig: 0.00s
+w_mod_order_time_opt: 0.00s
+opt_last_hb_time: 0.00s
+orig total time: 0.00s
+opt total time: 0.00s
+orig/opt: nan
+build_may_read_from time: 0.00s
+build_may_read_from_opt time: 0.00s
+positive correct results: 0
+negative correct results: 0
+wrong results: 0
+number_of_locations: 0
+number_of_shared_locations: 0
+sharead_variable_operations: 0
+local_variable_operations: 0
+local_variable_handling_time: 0.00s
+true_rf_count: 0
+false_rf_count: 0
+false_rf_count p1: 0
+max_rf_set_size: 0
+min_rf_set_size: 2147483647
+rf_set_size_lower_10_count: 0
+rf_set_size_over_10_count: 0
+rf_set_size_over_20_count: 0
+rf_set_size_over_50_count: 0
+rf_set_size_over_100_count: 0
+num_entered_predecessor_loop: 0
+get_last_write_over_threadhold_count: 0
+mo_prop_box0: 0
+mo_prop_box1: 0
+mo_prop_box2_5: 0
+mo_prop_box6_10: 0
+mo_prop_boxo10: 0
+rmw_chain_iter_box0: 0
+rmw_chain_iter_box1: 0
+rmw_chain_iter_box2_5: 0
+rmw_chain_iter_box6_10: 0
+rmw_chain_iter_boxo10: 0
+rmw_edge_transfer_box0: 0
+rmw_edge_transfer_box1: 0
+rmw_edge_transfer_box2_5: 0
+rmw_edge_transfer_box6_10: 0
+rmw_edge_transfer_boxo10: 0
+rmw chain count: 0
+
+Execution trace 1:
+------------------------------------------------------------------------------------
+#    t    Action type     MO       Location         Value               Rf  CV
+------------------------------------------------------------------------------------
+2    1    thread start    seq_cst  00007F6670440A50   0xdeadbeef              ([ 0, 0], [ 0, 0])
+
+4    1    atomic write    seq_cst  00007FFE492909A0   0                       ([ 0, 0], [ 0, 0])
+
+6    1    atomic write    seq_cst  00007FFE492909A4   0                       ([ 0, 0], [ 0, 4])
+
+00007FFE492909A0  ([ 0, 0], [ 0, 4])
+
+8    1    atomic write    seq_cst  00007FFE492909A8   0                       ([ 0, 0], [ 0, 6])
+
+00007FFE492909A4  ([ 0, 0], [ 0, 6])
+
+00007FFE492909A0  ([ 0, 0], [ 0, 4])
+
+10   1    atomic read     acquire  00007FFE492909A0   0                   4   ([ 0, 0], [ 0, 0])
+
+12   1    atomic rmw      acq_rel  00007FFE492909A0   0                 (1)  4   ([ 0, 0], [10, 8])
+
+00007FFE492909A0  ([ 0, 0], [10, 0])
+
+14   1    atomic read     acquire  00007FFE492909A4   0                   6   ([ 0, 0], [12,12])
+
+00007FFE492909A0  ([ 0, 0], [12,12])
+
+16   1    atomic rmw      relaxed  00007FFE492909A8   0                 (1)  8   ([ 0, 0], [14,12])
+
+00007FFE492909A4  ([ 0, 0], [14, 0])
+
+00007FFE492909A0  ([ 0, 0], [12,12])
+
+18   1    pthread create  seq_cst  00007FFE492908D8   0x7ffe492906a0          ([ 0, 0], [16,16])
+
+00007FFE492909A4  ([ 0, 0], [14, 6])
+
+00007FFE492909A0  ([ 0, 0], [12,12])
+
+00007FFE492909A8  ([ 0, 0], [16,16])
+
+20   2    thread start    seq_cst  00007F6671C48940   0xdeadbeef              ([ 0, 0], [16,16], [ 0, 0])
+
+00007FFE492909A4  ([ 0, 0], [14, 6])
+
+00007FFE492909A0  ([ 0, 0], [12,12])
+
+00007FFE492909A8  ([ 0, 0], [16,16])
+
+22   1    pthread create  seq_cst  00007FFE492908D8   0x7ffe492906a0          ([ 0, 0], [16,16])
+
+00007FFE492909A4  ([ 0, 0], [14, 6])
+
+00007FFE492909A0  ([ 0, 0], [12,12])
+
+00007FFE492909A8  ([ 0, 0], [16,16])
+
+24   3    thread start    seq_cst  00007F6671E49BE0   0xdeadbeef              ([ 0, 0], [16,16], [ 0, 0], [ 0, 0])
+
+00007FFE492909A4  ([ 0, 0], [14, 6])
+
+00007FFE492909A0  ([ 0, 0], [12,12])
+
+00007FFE492909A8  ([ 0, 0], [16,16])
+
+26   2    atomic read     acquire  00007FFE492909A0   0x1                 12  ([ 0, 0], [16,16], [ 0, 0])
+
+00007FFE492909A4  ([ 0, 0], [14, 6])
+
+00007FFE492909A0  ([ 0, 0], [12,12])
+
+00007FFE492909A8  ([ 0, 0], [16,16])
+
+28   2    atomic rmw      acq_rel  00007FFE492909A0   0x1               (2)  12  ([ 0, 0], [16,16], [26, 0])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [26, 0])
+
+00007FFE492909A4  ([ 0, 0], [14, 6])
+
+00007FFE492909A8  ([ 0, 0], [16,16])
+
+30   3    atomic read     acquire  00007FFE492909A0   0x2                 28  ([ 0, 0], [16,16], [28,28], [ 0, 0])
+
+00007FFE492909A4  ([ 0, 0], [14, 6])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [28,28])
+
+00007FFE492909A8  ([ 0, 0], [16,16])
+
+32   2    atomic read     acquire  00007FFE492909A4   0                   6   ([ 0, 0], [16,16], [28,28])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [28,28])
+
+00007FFE492909A4  ([ 0, 0], [14, 6])
+
+00007FFE492909A8  ([ 0, 0], [16,16])
+
+34   3    atomic rmw      acq_rel  00007FFE492909A0   0x2               (3)  28  ([ 0, 0], [16,16], [28,28], [30, 0])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [28,28], [30, 0])
+
+00007FFE492909A4  ([ 0, 0], [14, 6])
+
+00007FFE492909A8  ([ 0, 0], [16,16])
+
+36   2    atomic rmw      relaxed  00007FFE492909A8   0x1               (2)  16  ([ 0, 0], [16,16], [32,28])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [28,28])
+
+00007FFE492909A8  ([ 0, 0], [16,16])
+
+38   2    atomic read     acquire  00007FFE492909A0   0x3                 34  ([ 0, 0], [16,16], [36,36], [34,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [28,28], [34,34])
+
+00007FFE492909A8  ([ 0, 0], [16,16])
+
+40   2    atomic rmw      acquire  00007FFE492909A0   0x3               (10003)  34  ([ 0, 0], [16,16], [38,36], [34,34])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [38,28], [34,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0])
+
+00007FFE492909A8  ([ 0, 0], [16,16])
+
+42   2    atomic read     acquire  00007FFE492909A8   0x2                 36  ([ 0, 0], [16,16], [40,40], [34,34])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [34,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [36,36])
+
+44   2    thread yield    seq_cst  00007F6671C48940   0xdeadbeef              ([ 0, 0], [16,16], [42,40], [34,34])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [42,36])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [34,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0])
+
+46   2    atomic read     acquire  00007FFE492909A8   0x2                 36  ([ 0, 0], [16,16], [42,40], [34,34])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [42,36])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [34,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0])
+
+48   2    thread yield    seq_cst  00007F6671C48940   0xdeadbeef              ([ 0, 0], [16,16], [46,40], [34,34])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [46,36])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [34,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0])
+
+50   3    atomic read     acquire  00007FFE492909A4   0                   6   ([ 0, 0], [16,16], [28,28], [34,34])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [28,28], [34,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6])
+
+00007FFE492909A8  ([ 0, 0], [16,16])
+
+52   2    atomic read     acquire  00007FFE492909A8   0x2                 36  ([ 0, 0], [16,16], [46,40], [34,34])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [46,36])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [34,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0])
+
+54   3    atomic rmw      relaxed  00007FFE492909A8   0x2               (3)  36  ([ 0, 0], [16,16], [78,40], [50,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0], [50, 0])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [34,34])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [78,36])
+
+56   2    thread yield    seq_cst  00007F6671C48940   0xdeadbeef              ([ 0, 0], [16,16], [52,40], [34,34])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [52,36])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [34,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0])
+
+58   2    atomic read     acquire  00007FFE492909A8   0x2                 36  ([ 0, 0], [16,16], [52,40], [34,34])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [52,36])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [34,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0])
+
+60   3    atomic read     acquire  00007FFE492909A0   0x10003             40  ([ 0, 0], [16,16], [78,40], [54,54])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0], [50, 0])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [34,34])
+
+00007FFE492909A8  ([ 0, 0], [16,16])
+
+62   2    thread yield    seq_cst  00007F6671C48940   0xdeadbeef              ([ 0, 0], [16,16], [58,40], [34,34])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [58,36])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [34,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0])
+
+64   2    atomic read     acquire  00007FFE492909A8   0x2                 36  ([ 0, 0], [16,16], [58,40], [34,34])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [58,36])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [34,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0])
+
+66   3    atomic rmw      acquire  00007FFE492909A0   0x10003           (20003)  40  ([ 0, 0], [16,16], [78,40], [60,54])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [60,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0], [50, 0])
+
+00007FFE492909A8  ([ 0, 0], [16,16])
+
+68   3    atomic read     acquire  00007FFE492909A8   0x3                 54  ([ 0, 0], [16,16], [78,40], [66,66])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [66,66])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0], [50, 0])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [78,36], [54,54])
+
+70   2    thread yield    seq_cst  00007F6671C48940   0xdeadbeef              ([ 0, 0], [16,16], [64,40], [34,34])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [64,36])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [34,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0])
+
+72   3    atomic rmw      release  00007FFE492909A4   0                 (1)  6   ([ 0, 0], [16,16], [78,40], [68,66])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [78,36], [68,54])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [66,66])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0], [50, 0])
+
+74   3    atomic read     acquire  00007FFE492909A0   0x20003             66  ([ 0, 0], [16,16], [78,40], [72,72])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [78,36], [68,54])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [66,66])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0], [50, 0])
+
+76   3    atomic rmw      acquire  00007FFE492909A0   0x20003           (30003)  66  ([ 0, 0], [16,16], [78,40], [74,72])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [74,66])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [78,36], [68,54])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0], [50, 0])
+
+78   2    atomic read     acquire  00007FFE492909A8   0x2                 36  ([ 0, 0], [16,16], [64,40], [34,34])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [64,36])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [34,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0])
+
+80   2    thread yield    seq_cst  00007F6671C48940   0xdeadbeef              ([ 0, 0], [16,16], [78,40], [34,34])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [78,36])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [34,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0])
+
+82   3    atomic read     acquire  00007FFE492909A8   0x3                 54  ([ 0, 0], [16,16], [78,40], [76,76])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [76,76])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [78,36], [68,54])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0], [50, 0])
+
+84   3    atomic rmw      release  00007FFE492909A4   0x1               (2)  72  ([ 0, 0], [16,16], [78,40], [82,76])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [78,36], [82,54])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [76,76])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0], [72,72])
+
+86   3    atomic read     acquire  00007FFE492909A0   0x30003             76  ([ 0, 0], [16,16], [78,40], [84,84])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [78,36], [82,54])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [76,76])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0], [50, 0])
+
+88   3    thread finish   seq_cst  00007F6671E49BE0   0xdeadbeef              ([ 0, 0], [16,16], [78,40], [86,84])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [86,76])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [78,36], [82,54])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0], [50, 0])
+
+90   2    atomic read     acquire  00007FFE492909A8   0x3                 54  ([ 0, 0], [16,16], [78,40], [54,54])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [78,36], [54,54])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [34,34])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0], [50, 0])
+
+92   2    atomic rmw      release  00007FFE492909A4   0x2               (3)  84  ([ 0, 0], [16,16], [90,40], [84,84])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [90,36], [82,54])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [76,76])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0], [84,84])
+
+94   2    atomic read     acquire  00007FFE492909A0   0x30003             76  ([ 0, 0], [16,16], [92,92], [84,84])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [90,36], [68,54])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [40,40], [76,76])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0], [50, 0])
+
+96   2    thread finish   seq_cst  00007F6671C48940   0xdeadbeef              ([ 0, 0], [16,16], [94,92], [84,84])
+
+00007FFE492909A0  ([ 0, 0], [12,12], [94,40], [76,76])
+
+00007FFE492909A8  ([ 0, 0], [16,16], [90,36], [68,54])
+
+00007FFE492909A4  ([ 0, 0], [14, 6], [32, 0], [50, 0])
+
+98   1    pthread join    seq_cst  00007F6671C48940   0x2                     ([ 0, 0], [16,16])
+
+00007FFE492909A4  ([ 0, 0], [14, 0])
+
+00007FFE492909A0  ([ 0, 0], [12,12])
+
+100  1    pthread join    seq_cst  00007F6671E49BE0   0x3                     ([ 0, 0], [16,16])
+
+00007FFE492909A4  ([ 0, 0], [14, 0])
+
+00007FFE492909A0  ([ 0, 0], [12,12])
+
+102  1    thread finish   seq_cst  00007F6670440A50   0xdeadbeef              ([ 0, 0], [16,16])
+
+00007FFE492909A4  ([ 0, 0], [14, 0])
+
+00007FFE492909A0  ([ 0, 0], [12,12])
+
+HASH 1139487067
+------------------------------------------------------------------------------------
+
+******* Model-checking complete: *******
