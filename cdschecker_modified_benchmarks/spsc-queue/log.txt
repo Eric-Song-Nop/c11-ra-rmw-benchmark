@@ -1,0 +1,283 @@
+C11Tester
+Copyright (c) 2013 and 2019 Regents of the University of California. All rights reserved.
+Distributed under the GPLv2
+Written by Weiyu Luo, Brian Norris, and Brian Demsky
+
+STARTING EXECUTION: 1
+***      librace.cc:55                   cds_load8() *** addr = 00007FFEA7F51BD7
+***      librace.cc:55                   cds_load8() *** addr = 00007FFEA7F51BD7
+***      librace.cc:55                   cds_load8() *** addr = 00007F17C5A3FD18
+***      librace.cc:55                   cds_load8() *** addr = 00007F17C5A3FD18
+***      librace.cc:55                   cds_load8() *** addr = 00007F17C5A3FD18
+
+
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Read responsible: 
+48   3    atomic read     acquire  00000000020B8F20   0xdeadbeef          ?   ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+
+ Printing XHB RF set thread wise
+18   2    atomic write    release  00000000020B8F20   0x7f17c0000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F17C0000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+
+ Printing ARM RF set thread wise
+6    1    atomic write    seq_cst  00000000020B8F20   0                       ([ 0, 0], [ 0, 4])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000020B8F20   0x7f17c0000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F17C0000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+
+FINISHED EXECUTION: 1
+Number of complete, bug-free executions: 1
+Number of buggy executions: 0
+Total executions: 1
+atomic store  count: 4
+atomic load   count: 6
+atomic rmw    count: 2
+atomic fence  count: 0
+atomic lock   count: 2
+atomic trylock count: 0
+atomic unlock count: 3
+atomic notify count: 0
+atomic wait   count: 0
+atomic timedwait count: 0
+store 8  count: 8
+store 16 count: 0
+store 32 count: 4
+store 64 count: 58
+load  8  count: 5
+load  16 count: 0
+load  32 count: 5
+load  64 count: 60
+total iter count: 0, last_hb_write_null count: 0
+opt_prop_overhead: 0.00s
+mo_graph overhead: 0.00s
+ds overhead: 0.00s
+process_rmw orig: 0.00s
+process_rmw opt: 0.00s
+r_mod_order_time_orig positive: 0.00s
+r_mod_order_time_orig negative: 0.00s
+r_mod_order_time_orig total: 0.00s
+r_mod_order_time_opt positive: 0.00s
+r_mod_order_time_opt negative: 0.00s
+r_mod_order_time_opt total: 0.00s
+r_mod_order_time_orig_opt positive: 0.00s
+r_mod_order_time_orig_opt negative: 0.00s
+r_mod_order_time_orig_opt total: 0.00s
+w_mod_order_time_orig: 0.00s
+w_mod_order_time_opt: 0.00s
+opt_last_hb_time: 0.00s
+orig total time: 0.00s
+opt total time: 0.00s
+orig/opt: nan
+build_may_read_from time: 0.00s
+build_may_read_from_opt time: 0.00s
+positive correct results: 0
+negative correct results: 0
+wrong results: 0
+number_of_locations: 0
+number_of_shared_locations: 0
+sharead_variable_operations: 0
+local_variable_operations: 0
+local_variable_handling_time: 0.00s
+true_rf_count: 0
+false_rf_count: 0
+false_rf_count p1: 0
+max_rf_set_size: 0
+min_rf_set_size: 2147483647
+rf_set_size_lower_10_count: 0
+rf_set_size_over_10_count: 0
+rf_set_size_over_20_count: 0
+rf_set_size_over_50_count: 0
+rf_set_size_over_100_count: 0
+num_entered_predecessor_loop: 0
+get_last_write_over_threadhold_count: 0
+mo_prop_box0: 0
+mo_prop_box1: 0
+mo_prop_box2_5: 0
+mo_prop_box6_10: 0
+mo_prop_boxo10: 0
+rmw_chain_iter_box0: 0
+rmw_chain_iter_box1: 0
+rmw_chain_iter_box2_5: 0
+rmw_chain_iter_box6_10: 0
+rmw_chain_iter_boxo10: 0
+rmw_edge_transfer_box0: 0
+rmw_edge_transfer_box1: 0
+rmw_edge_transfer_box2_5: 0
+rmw_edge_transfer_box6_10: 0
+rmw_edge_transfer_boxo10: 0
+rmw chain count: 0
+
+Execution trace 1:
+------------------------------------------------------------------------------------
+#    t    Action type     MO       Location         Value               Rf  CV
+------------------------------------------------------------------------------------
+2    1    thread start    seq_cst  00007F17C6277A50   0xdeadbeef              ([ 0, 0], [ 0, 0])
+
+4    1    atomic write    seq_cst  00000000020B8E80   0                       ([ 0, 0], [ 0, 0])
+
+6    1    atomic write    seq_cst  00000000020B8F20   0                       ([ 0, 0], [ 0, 4])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4])
+
+8    1    pthread create  seq_cst  00007FFEA7F51CB8   0x7ffea7f51bc0          ([ 0, 0], [ 0, 6])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4])
+
+10   2    thread start    seq_cst  00007F17C7A7AF00   0xdeadbeef              ([ 0, 0], [ 0, 6], [ 0, 0])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4])
+
+12   1    pthread create  seq_cst  00007FFEA7F51CB8   0x7ffea7f51bc0          ([ 0, 0], [ 0, 6])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4])
+
+14   3    thread start    seq_cst  00007F17C7D7C1B0   0xdeadbeef              ([ 0, 0], [ 0, 6], [ 0, 0], [ 0, 0])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4])
+
+16   2    atomic write    seq_cst  00007F17C0000B20   0                       ([ 0, 0], [ 0, 6], [ 0, 0])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4])
+
+18   2    atomic write    release  00000000020B8F20   0x7f17c0000b20          ([ 0, 0], [ 0, 6], [ 0,16], [24,22])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00007F17C0000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+20   3    atomic read     acquire  00000000020B8F20   0                   6   ([ 0, 0], [ 0, 6], [ 0, 0], [ 0, 0])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4])
+
+22   3    atomic rmw      seq_cst  00000000020B8E80   0                 (80000000)  4   ([ 0, 0], [ 0, 6], [ 0, 0], [20, 0])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6], [ 0, 0], [20, 0])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4])
+
+24   3    atomic read     acquire  00000000020B8F20   0                   6   ([ 0, 0], [ 0, 6], [ 0, 0], [22,22])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6], [ 0, 0], [20, 0])
+
+26   2    atomic read     relaxed  00000000020B8E80   0x80000000          22  ([ 0, 0], [ 0, 6], [ 0, 0], [22,22])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6], [ 0, 0], [20, 0])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+28   2    lock            seq_cst  00007F17C7F836C8   0xdeadbeef              ([ 0, 0], [ 0, 6], [26,18], [24,22])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4])
+
+30   3    atomic read     seq_cst  00000000020B8E80   0x80000000          22  ([ 0, 0], [ 0, 6], [ 0, 0], [24,22])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4], [ 0, 0], [22,22])
+
+32   2    atomic rmw      relaxed  00000000020B8E80   0x80000000        (1)  22  ([ 0, 0], [ 0, 6], [26,18], [24,22])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6], [ 0, 0], [20, 0])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4], [26, 0], [22,22])
+
+34   2    unlock          seq_cst  00007F17C7F836C8   0xdeadbeef              ([ 0, 0], [ 0, 6], [32,32], [24,22])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4])
+
+36   2    thread finish   seq_cst  00007F17C7A7AF00   0xdeadbeef              ([ 0, 0], [ 0, 6], [32,32], [24,22])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4])
+
+38   1    pthread join    seq_cst  00007F17C7A7AF00   0x2                     ([ 0, 0], [ 0, 6])
+
+40   3    lock            seq_cst  00007F17C7F836C8   0xdeadbeef              ([ 0, 0], [ 0, 6], [ 0, 0], [30,22])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4], [ 0, 0], [30,22])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+42   3    atomic read     seq_cst  00000000020B8E80   0x1                 32  ([ 0, 0], [ 0, 6], [32,32], [30,22])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4], [32,32], [30,22])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+44   3    unlock          seq_cst  00007F17C7F836C8   0xdeadbeef              ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+46   3    unlock          seq_cst  00007F17C7F836C8   0xdeadbeef              ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6], [ 0, 0], [24, 0])
+
+48   3    atomic read     acquire  00000000020B8F20   0x7f17c0000b20      18  ([ 0, 0], [ 0, 6], [32,32], [42,22])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6], [ 0,18], [24, 0])
+
+00007F17C0000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+50   3    thread finish   seq_cst  00007F17C7D7C1B0   0xdeadbeef              ([ 0, 0], [ 0, 6], [32,32], [48,22])
+
+00000000020B8F20  ([ 0, 0], [ 0, 6], [ 0,18], [48, 0])
+
+00000000020B8E80  ([ 0, 0], [ 0, 4], [32,32], [42,22])
+
+00007F17C0000B20  ([ 0, 0], [ 0, 0], [ 0,16])
+
+52   1    pthread join    seq_cst  00007F17C7D7C1B0   0x3                     ([ 0, 0], [ 0, 6])
+
+54   1    thread finish   seq_cst  00007F17C6277A50   0xdeadbeef              ([ 0, 0], [ 0, 6])
+
+HASH 1078948056
+------------------------------------------------------------------------------------
+
+******* Model-checking complete: *******
